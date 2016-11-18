@@ -1,0 +1,64 @@
+{
+  "name": "restaurante",
+  "plural": "restaurantes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "comentario": {
+      "type": "string",
+      "required": true
+    },
+    "zona": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "geoloc": {
+      "type": "geopoint",
+      "required": true
+    },
+    "direccion": {
+      "type": "string",
+      "required": true
+    },
+    "calificacion": {
+      "type": "number",
+      "required": true
+    },
+    "fotos": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "calUsers": {
+      "type": [
+        "number"
+      ],
+      "required": true
+    },
+    "platos": {
+      "type": [
+        "any"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
